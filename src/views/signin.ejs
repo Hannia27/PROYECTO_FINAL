@@ -1,0 +1,213 @@
+<%- layout('layouts/main.ejs') %>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+     <!--FONT AWESOME-->
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <!--CSS-->
+    <link rel="stylesheet" href="css/style.css" type="Text/css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="card mb-3">
+          <div class="card-body">
+            <h3 class="text-center display-5"><i class="fab fa-pagelines"> INFORMACIÓN MERCANCIA.</i></h3>
+            <br />
+            <br />
+            <div class="container">
+              <div class="row">
+                <div class="col">
+                  <img src="https://cdn.pixabay.com/photo/2018/10/19/22/32/cocoa-3759829_1280.jpg" class="card-img-top" alt="imagen10">
+                </div>
+                <div class="col order-5">
+                  <img src="https://cdn.pixabay.com/photo/2019/02/28/11/23/chocolate-marshmallows-4025791_1280.jpg" class="card-img-top" alt="imagen10">
+                </div>
+                <div class="col order-1">
+                  <br/>
+                  <img src="https://cdn.pixabay.com/photo/2021/07/25/22/57/dessert-6492939_1280.jpg" class="card-img-top" alt="imagen10">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <br />
+    <br />
+    <div class = "container text-dark bg-light">
+      <h3 class="text-center display-6"> Información personal</h3>
+      <br />
+      <form class="row g-3 needs-validation" novalidate>
+        <div class = "container">
+          <div class="col-md-6">
+            <label for="validationCustom01" class="form-label">Nombre (requerido)</label>
+            <input type="text" class="form-control" id="validationCustom01" value="" required>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+          </div>
+        </div>
+        <div class = "container text-dark bg-light">
+          <div class="col-md-6">
+            <label for="validationCustom02" class="form-label">Apellidos (requeridos)</label>
+            <input type="text" class="form-control" id="validationCustom02" value="" required>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+          </div>
+        </div>
+        <div class = "container text-dark bg-light">
+          <div class="col-md-6">
+          <label for="validationCustom03" class="form-label">Proveedor (Nombre de la empresa)</label>
+          <input class="form-control" list="datalistOptions" id="validationCustom03" placeholder="Type to search...">
+          <datalist id="datalistOptions">
+            <option value="Paraiso Rangel">
+            <option value="Bodega Aurrera">
+            <option value="Central de abastos">
+            <option value="Laboratorios clinicos">
+            <option value="Punto de arte">
+          </datalist>
+        </div>
+        </div>
+        <div class = "container text-dark bg-light">
+          <div class="col-md-6">
+            <label for="validationCustomUsername" class="form-label">Correo electronico</label>
+            <div class="input-group has-validation">
+              <span class="input-group-text" id="inputGroupPrepend">@</span>
+              <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+              <div class="invalid-feedback">
+                Please choose a username.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class = "container text-dark bg-light">
+          <div class="col-md-6">
+            <label for="validationCustom04" class="form-label">Telefono</label>
+            <input type="text" class="form-control" id="validationCustom04" value="" required>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+          </div>
+        </div>
+        <div clas = "container text-dark bg-light">
+          <div class="col-md-6">
+            <label for="validationCustom03" class="form-label">Ciudad</label>
+            <input type="text" class="form-control" id="validationCustom03" required>
+            <div class="invalid-feedback">
+              Please provide a valid city.
+            </div>
+          </div>
+        </div>
+        <div class = "container text-dark bg-light">
+          <div class="col-md-6">
+            <label for="validationCustom04" class="form-label">Estado</label>
+            <select class="form-select" id="validationCustom04" required>
+              <option selected disabled value="">Choose...</option>
+              <option>Aguascalientes</option>
+                <option>Baja California Sur</option>
+                <option>Campeche</option>
+                <option>Chiapas</option>
+                <option>Chihuahua</option>
+                <option>Ciudad de México</option>
+                <option>Coahuila</option>
+                <option>Colima</option>
+                <option>Durango</option>
+                <option>Estado de México</option>
+                <option>Guanajuato</option>
+                <option>Hidalgo</option>
+                <option>Guerrero</option>
+                <option>Hidalgo</option>
+                <option>Jalisco</option>
+                <option>Michoacán</option>
+                <option>Morelos</option>
+                <option>Nayarit</option>
+                <option>Oaxaca</option>
+                <option>Puebla</option>
+                <option>Querétaro</option>
+                <option>San Luis Potosí</option>
+                <option>Sinaloa</option>
+                <option>Sonora</option>
+                <option>Tamaulipas</option>
+                <option>Tabasco</option>
+                <option>Tlaxcala</option>
+                <option>Veracruz</option>
+                <option>Yucatán</option>
+                <option>Zacatecas</option>
+            </select>
+            <div class="invalid-feedback">
+              Please select a valid state.
+            </div>
+          </div>
+        </div>
+        <div class = "container text-dark bg-light">
+          <h3 class="text-center display-5"> Datos de la mercancia</h3>
+          <br />
+            <div class="col-md-6">
+              <label for="validationCustom05" class="form-label">Describa la mercancia</label>
+              <input type="text" class="form-control" id="validationCustom05" values = "guardarArchivoDeTexto1(" ", "archivo.txt")" required>
+              <div class="valid-feedback">
+                Looks good!
+              </div>
+            </div>
+        </div>
+        <div class = "container text-dark bg-light">
+          <div class="col-md-6">
+            <label for="validationCustom06" class="form-label">N° de Bultos</label>
+            <input type="text" class="form-control" id="validationCustom06" value="" required>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+          </div>
+        </div>
+        <div class = "container text-dark bg-light">
+          <div class="col-md-6">
+            <label for="validationCustom07" class="form-label">Peso</label>
+            <input type="text" class="form-control" id="validationCustom07" value="" required>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+          </div>
+        </div>
+        <br />
+        <div class = "container text-dark bg-light">
+          <h3 class="text-center display-5"> Datos del responsable</h3>
+          <br />
+          <%- layout('layouts/main') %>
+          <div class="row">
+            <div class="col-md-4 offset-md-4">
+              <div class="card mt-4 text-center">
+                <div class="card-header">
+                  <h3>Confirmar correo.</h3>
+                </div>
+                <div class="card-body">
+                  <form action="/signin" method="POST">
+                    <div class="form-group">
+                      <input type="email" name="email" placeholder="Email" class="form-control mb-3">
+                    </div>
+                    <div class="form-group">
+                      <input type="password" name="password" placeholder="Password" class="form-control mb-3">
+                    </div>
+                    <div class="d-grid gap-2 col-6 mx-auto">
+                      <button type="submit" class="btn btn-dark mb-3">Enviar </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+      <br />
+      <br />
+      <div class="d-grid gap-2 col-6 mx-auto">
+        <a href="./control" class="btn btn-primary">Regresar</a>
+      </div>
+      <br />
+      <br />
+    <!--JS Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

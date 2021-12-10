@@ -1,0 +1,140 @@
+<%- layout('layouts/main.ejs') %>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+     <!--FONT AWESOME-->
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <!--CSS-->
+    <link rel="stylesheet" href="css/style.css" type="Text/css">
+  </head>
+  <body>
+    <br />
+    <br />
+    <div class="container">
+      <div class="card mb-3">
+          <div class="card-body">
+            <h3 class="text-center display-5"><i class="fab fa-pagelines"> FLOR DE CHOCOLATE, OPERACIONES.</i></h3>
+            <br />
+            <br />
+            <div class="container">
+              <div class="row">
+                <div class="col">
+                  <img src="https://cdn.pixabay.com/photo/2021/08/17/23/26/cacao-6554303_1280.jpg" class="card-img-top" alt="imagen10">
+                </div>
+                <div class="col order-5">
+                  <img src="https://cdn.pixabay.com/photo/2014/07/05/20/45/cocoa-385038_1280.jpg" class="card-img-top" alt="imagen10">
+                </div>
+                <div class="col order-1">
+                  <br/>
+                  <img src="https://cdn.pixabay.com/photo/2021/11/07/16/40/chocolate-6777187_1280.jpg" class="card-img-top" alt="imagen10">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <br />
+    <br />
+    <p>El usuario "<%= user.email %>", ingreso <%= new Date() %></p> 
+    <div class = "container">
+        <br />
+        <br />
+        <h3>Ingrese su información personal.</h3>
+        <form class="row g-3 needs-validation" novalidate>
+            <div class="col-md-4">
+              <label for="validationCustom01" class="form-label">Nombre/nombres</label>
+              <input type="text" class="form-control" id="validationCustom01" value="" required>
+              <div class="valid-feedback">
+                  <scrip></scrip>
+                Looks good!
+              </div>
+            </div>
+            <div class="col-md-4">
+              <label for="validationCustom02" class="form-label">Apellidos</label>
+              <input type="text" class="form-control" id="validationCustom02" value="" required>
+              <div class="valid-feedback">
+                Looks good!
+              </div>
+            </div>
+            <div class="col-md-4">
+              <label for="validationCustomUsername" class="form-label">Correo personal</label>
+              <div class="input-group has-validation">
+                <span class="input-group-text" id="inputGroupPrepend">@</span>
+                <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                <div class="invalid-feedback">
+                  Please choose a username.
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <label for="validationCustom03" class="form-label">Ciudad de residencia.</label>
+              <input type="text" class="form-control" id="validationCustom03" required>
+              <div class="invalid-feedback">
+                Please provide a valid city.
+              </div>
+            </div>
+            <div class="col-md-3">
+              <label for="validationCustom04" class="form-label">Estado de residencia</label>
+              <select class="form-select" id="validationCustom04" required>
+                <option selected disabled value="">Elija...</option>
+                <option>Aguascalientes</option>
+                <option>Baja California Sur</option>
+                <option>Campeche</option>
+                <option>Chiapas</option>
+                <option>Chihuahua</option>
+                <option>Ciudad de México</option>
+                <option>Coahuila</option>
+                <option>Colima</option>
+                <option>Durango</option>
+                <option>Estado de México</option>
+                <option>Guanajuato</option>
+                <option>Hidalgo</option>
+                <option>Guerrero</option>
+                <option>Hidalgo</option>
+                <option>Jalisco</option>
+                <option>Michoacán</option>
+                <option>Morelos</option>
+                <option>Nayarit</option>
+                <option>Oaxaca</option>
+                <option>Puebla</option>
+                <option>Querétaro</option>
+                <option>San Luis Potosí</option>
+                <option>Sinaloa</option>
+                <option>Sonora</option>
+                <option>Tamaulipas</option>
+                <option>Tabasco</option>
+                <option>Tlaxcala</option>
+                <option>Veracruz</option>
+                <option>Yucatán</option>
+                <option>Zacatecas</option>        
+              </select>
+              <div class="invalid-feedback">
+                Please select a valid state.
+              </div>
+            </div>
+            <div class="col-md-3">
+              <label for="validationCustom05" class="form-label">Código (estado)</label>
+              <input type="text" class="form-control" id="validationCustom05" required>
+              <div class="invalid-feedback">
+                Please provide a valid zip.
+              </div>
+            </div>
+          </form>
+          <br />
+          <br />
+          <div class="d-grid gap-2 col-6 mx-auto">
+            <a href="./informacion" class="btn btn-primary">Siguiente</a>
+            <a href="./signup" class="btn btn-primary">Regresar</a>
+          </div>
+          <br />
+          <br />
+    </div>
+    <!--JS Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
